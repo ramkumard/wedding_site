@@ -1,7 +1,40 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.4.0)
+    domain_name (0.5.20160128)
+      unf (>= 0.0.5, < 1.0.0)
+    excon (0.45.4)
+    heroku (3.41.3)
+      heroku-api (>= 0.3.19)
+      launchy (>= 0.3.2)
+      multi_json (>= 1.10)
+      net-ssh-gateway (>= 1.2.0)
+      netrc (>= 0.10.0)
+      rest-client (>= 1.6.0)
+      rubyzip (>= 0.9.9)
+    heroku-api (0.3.23)
+      excon (~> 0.44)
+      multi_json (~> 1.8)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    mime-types (2.99.1)
+    multi_json (1.11.2)
+    net-ssh (3.0.2)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
+    netrc (0.11.0)
     rack (1.6.4)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    rubyzip (1.2.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.2)
     vienna (0.4.1)
       rack (~> 1.5)
 
@@ -9,5 +42,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  heroku
   rack
   vienna
